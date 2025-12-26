@@ -35,5 +35,5 @@ down.addEventListener("click", () => {
 
 cls.addEventListener("click", () => {
   popup.classList.remove("show");
- opa.classList.remove("light");
+ opa.classList.remove("light")
 });
