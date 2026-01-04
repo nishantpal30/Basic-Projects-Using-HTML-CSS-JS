@@ -22,6 +22,7 @@ html{
     --pure-white:#FFF;
     --lead:#212121;
     --body-color:#f3f0e7;
+    --main-black:#000000 ;
 
 
 }
@@ -101,8 +102,61 @@ a{
 .mobile-bar{
     display: none;
 }
-/* section style */
 
+
+.main-front-contant{
+    max-width: 143rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 7rem;
+    
+}
+.main-front-text .main-front-heading{
+    & h1{
+        font-size: 8rem;
+        text-transform: capitalize;
+        color: var(--main-black);
+        
+        & span {
+            color: var(--maincolor);
+
+        }
+    }
+    & p {
+       
+         letter-spacing: 0.1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--main-black);
+        text-transform: capitalize;
+        margin:3rem 3rem 3rem 0rem;
+
+    }
+
+}
+
+
+.main-front-btn{
+    display: flex;
+    gap: 3rem;
+    
+    align-items: center;
+}
+.main-front-btn .order-btn {
+    background-color:var(--maincolor);
+    color: var(--pure-white);
+    padding: 1rem;
+   
+    border-radius: 1.5rem;
+    & a{
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+}
 
 
 
