@@ -157,6 +157,64 @@ a{
         padding: 1rem;
     }
 }
+.social-logo{
+ font-size: 3rem;   
+ padding: 1rem;
+}
+
+.social-logo:hover{
+    background-color: var(--backcolor);
+    border-radius: 1rem;
+}
+
+.service-heading{
+    margin-top: 2rem;
+    gap: 1rem;
+    display: grid;
+    place-items: center;
+
+    & h2{
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+    & span{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--maincolor);
+    text-transform: capitalize;
+}
+}
+
+.service-card{
+    display: grid;
+    place-items: center;
+}
+.service-img{
+    max-width: 142rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+    
+
+.service-card-text{
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    & h3{
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: var(--main-black);
+    }
+    & p{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+
+    }
+}
 
 
 
