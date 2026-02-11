@@ -1,0 +1,52 @@
+/*!UNIVERSAL CODE*/
+@font-face {
+    font-family: light;
+    src: url(./Fonts/AeonikTRIAL-Light.otf);
+}
+
+@font-face {
+    font-family: normal;
+    src: url(./Fonts/AeonikTRIAL-Regular.otf);
+}
+@font-face {
+    font-family : bold;
+    src: url(./Fonts/AeonikTRIAL-Bold.otf);
+}
+
+:root{
+    --pri : #F8F4E1;
+    --sec : #4E1F00;
+    --tri1 : #FEBA17;
+    --tri2 : #74512D;
+}
+
+*{
+margin :0;
+padding :0;
+box-sizing :border-box;
+}
+html , 
+body{
+height :100%;
+width : 100%;
+}
+html {
+font-size: 62.5%;
+/* 1rem=10px */
+}
+p,
+li,
+a,
+label,
+button {
+font-size: 1.8rem;
+letter-spacing: 0.1rem;
+font-weight: 400;
+line-height: 1.5;
+}
+a {
+text-decoration: none;
+}
+li {
+list-style: none;
+}
