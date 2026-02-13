@@ -15,8 +15,8 @@
 
 :root{
     --pri : #F8F4E1;
-    --sec : #4E1F00;
-    --tri1 : #FEBA17;
+    --sec : #C7CEF3;
+    --btn : #5D6C9F;
     --tri2 : #74512D;
 }
 
@@ -24,6 +24,8 @@
 margin :0;
 padding :0;
 box-sizing :border-box;
+font-family: normal;
+color: var(--pri);
 }
 html , 
 body{
@@ -49,4 +51,65 @@ text-decoration: none;
 }
 li {
 list-style: none;
+}
+
+body{
+    /* width: 100%;
+    height: 100%; */
+    background-color: var(--sec);
+}
+
+.allelems{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 5rem;
+   
+
+}
+.elem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.elem{
+    background-color: var(--tri1);
+    height: 30rem;
+    width: 20rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    /* overflow: hidden; */
+   
+   border: 0.3rem solid var(--btn);
+}
+
+
+
+.cardbtn{
+  transition: all ease 0.5s;
+    margin-top: 1rem;
+    background-color: var(--btn);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    border: none;
+    font-family: bold;
+    
+}
+
+.cardbtn:active{
+    scale: 0.97;
+}
+
+.cont-elems{
+    width: 100%;
+    height: 100%;
+    display: none;
 }
