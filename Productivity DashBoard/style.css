@@ -1,91 +1,232 @@
 /*!UNIVERSAL CODE*/
-@font-face {
-  font-family: light;
-  src: url(./Fonts/AeonikTRIAL-Light.otf);
-}
-@font-face {
-  font-family: regular;
-  src: url(./Fonts/AeonikTRIAL-Regular.otf);
-}
-@font-face {
-  font-family: bolde;
-  src: url(./Fonts/AeonikTRIAL-Bold.otf);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: regular;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  --main: #1c0770;
-  --btn: #3a9aff;
-  --text: #261cc1;
+*{
+margin :0;
+padding :0;
+box-sizing :border-box;
+font-family: "Poppins", sans-serif;
 }
-html,
+html , 
 html {
-  font-size: 62.5%;
-  /* 1rem=10px */
+font-size: 62.5%;
+/* 1rem=10px */
 }
 p,
 li,
 a,
 label,
 button {
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  font-weight: 400;
-  line-height: 1.5;
+font-size: 1.8rem;
+letter-spacing: 0.1rem;
+font-weight: 400;
+line-height: 1.5;
 }
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 li {
-  list-style: none;
+list-style: none;
+}
+:root{
+    --background:#8fa6b8;
+    --textclr: #f2efe9;
+    --btnhead:#0b1f3a;
+    --box:#003153;
+    --btncolor:#5478FF;
+    --grbtn:#00D100;
+}
+body{
+    background-color: var(--background);
+    height: 100%;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--main);
+ nav .nav-img img{
+    width: 100%;
+    height: 25rem;
+    object-fit:cover;
+    padding:0.5rem 1rem 1.5rem 1rem;
+    border-radius: 3rem;
+   
+}
+.main-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    
+}
+.main-ele{
+   
+    border-radius: 1rem;
+    background-color: orange;
+    width: 23rem;
+    height:20rem ;
+    position: relative;
+   
+}
+.main-ele img{
+    width: 23rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+     border: 0.5rem solid var(--box);
+}
+.main-ele h2{
+    position: absolute;
+    bottom:6%;
+    left: 30%;
+    color: var(--textclr);
+    font-size: 3rem;
+    text-transform: capitalize;
 }
 
-.main-content {
-  display: flex;
-  justify-content: space-around;
-
-  flex-wrap: wrap;
-
-  width: 100%;
-  padding: 2rem;
+.thought{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
 }
-.main-elem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.thought h1{
+    color: var(--textclr);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.main-pages{
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: var(--background);
+    padding-top: 2rem;
+
+}
+
+
+.back{
+    position: absolute;
+    right: 5%;
+    background-color: red;
+    border-radius: 1rem;
+    border: none;
     padding: 1rem;
-  gap: 0.5rem;
-  height: 25rem;
-  width: 20rem;
-  border: 0.3rem solid var(--text);
-  border-radius: 1rem;
-  -webkit-box-shadow: inset 2px 2px 13px 0px #3A9AFF; 
-box-shadow: inset 2px 2px 13px 0px #3A9AFF;
+    font-weight: bold;
+    color: var(--textclr);
 }
-.main-elem img {
-  border-radius: 2rem;
-  object-fit: cover;
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-transform:uppercase;
+    font-size: 3rem;
+    color: var(--btnhead);
+    font-weight: bold;
+    
 }
-button {
-  border: none;
+
+.main-pages .todo-area{
+    margin: 5rem;
+    margin-left: 6rem;
+    max-width: 90%;
+    height: 80%;
+    background-color: var(--box);
+   display:grid;
+   border-radius: 1rem;
+   
+   grid-template-columns: repeat(2,1fr);
+  
 }
-.mainbtn {
-  background-color: var(--btn);
-  color: var(--text);
-  font-family: bolde;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-size: 2rem;
+
+.main-pages h1{
+    text-decoration:underline ;
+}
+.main-pages .todo-area .addtask form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem;
+    
+}
+.main-pages .todo-area .addtask form input{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+    background-color: var(--background);
+    border: none;
+    border-radius: 1rem;
+    text-transform:capitalize;
+    
+    
+}
+.main-pages .todo-area .addtask form textarea{
+    background-color: var(--background);
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    border: none;
+    text-transform:capitalize;
+}
+.main-pages .todo-area .addtask form button{
+    background-color:var(--btncolor);
+    border: none;
+    border-radius: 1rem;
+    color: var(--textclr);
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform:uppercase;
+}
+input::placeholder,
+textarea::placeholder {
+  color:var(--textclr);
+}
+.main-pages .todo-area .deletetask{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+    margin-bottom: 4rem;
+     scrollbar-width:thin;
+     scrollbar-color: var(--background) var(--box);
+}
+.main-pages .todo-area .deletetask .tasklists{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    & h5{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        color: var(--textclr);
+
+    }
+    & button{
+        font-size: 1.2rem;
+        background-color: var(--grbtn);
+        border: none;
+        border-radius: 1rem;
+        padding: 0.8rem;
+        font-weight: bolder;
+        color: var(--textclr);
+        text-transform: capitalize;
+    }
+}
+
+.main-pages .todo-area .deletetask .taskdetails{
+    background-color: var(--background);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--textclr);
+    text-transform: capitalize;
+    & p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }

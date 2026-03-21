@@ -7,70 +7,99 @@
     <title>Productivity Dashboard</title>
 </head>
 <body>
-    <nav>
+    <header>
+        <nav>
+            <div class="nav-img">
+                <img src="./Images/nav nature.jpg" alt="nature">
+            </div>
+        </nav>
+    </header>
 
-    </nav>
     <main>
-        <!-- maincontent div -->
-        <div class="main-content">
-            <!-- to div -->
-             <div class="main-todo main-elem">
-                <img src="./Images/todolist.png" alt="to-do img" width="80%">
-                <button class="mainbtn">To Do List</button>
-                
-             </div>
-             <!-- goal div -->
-              <div class="main-goal main-elem">
-                <img src="./Images/Daily Pmanner.png" alt="Dailt goal img" width="80%">
-                <button class="mainbtn">Daily Planner</button>
-              </div>
-
-              <!-- motivation div -->
-               <div class="main-motivation main-elem">
-                <img src="./Images/Motivation.png" alt="motivation png" width="80%">
-                <button class="mainbtn">Motivation</button>
-               </div>
-
-               <!-- daily goal -->
-               <div class="main-dailygoal main-elem">
-                <img src="./Images/DailyGoal.png" alt="DailyGoal" width="80%">
-                <button class="mainbtn">Daily Goal</button>
-               </div>
-
-               <!-- paomodorotimerdiv -->
-                <div class="main-timer main-elem">
-                    <img src="./Images/Promotimer.png" alt="Timer" width="80%">
-                <button class="mainbtn">Promodoro</button>
-                </div>
-                
+        <div class="main-card">
+            <!-- todo div -->
+            <div class="main-todo main-ele" id="0">
+                <img src="./Images/4.jpg" alt="todo">
+                <h2>To-Do</h2>
+            </div>
+            <!-- weekly div -->
+             <div class="main-week main-ele" id="1">
+                <img src="./Images/weekly.jpg" alt="weekly">
+                <h2>weekly</h2>
+            </div>
+            <!-- monthly div -->
+             <div class="main-month main-ele" id="2">
+                <img src="./Images/month.png" alt="month">
+                <h2>Monthly</h2>
+            </div>
+            <!-- Motivation  -->
+              <div class="main-motivation main-ele" id="3">
+                <img src="./Images/motivation.jpg" alt="motivation">
+                <h2>Motivation</h2>
+            </div>
         </div>
+
+        <!-- thought div -->
+         <div class="thought">
+            <h1>Consistency is all key</h1>
+         </div>
+
+
+         <section class="main-pages todo-pge" >
+            <button class="back" id="0">CLOSE</button>
+            <h1>your personalised tasklist</h1>
+
+             <!-- to area -->
+            <div class="todo-area">
+               <div class="addtask">
+                <form action="" class="todo-form">
+            <input type="text" placeholder="Enter Task!">
+            <textarea name="" placeholder="Enter Details..." id="" cols="7" rows="3"></textarea>
+            
+            <button>Add Task</button>
+
+        </form>
+
+               </div>
+               <div class="deletetask">
+                <!-- <div class="tasklists">
+                    <h5>Get up early</h5>
+                    <button>Mark's as completed</button>
+                </div> -->
+               
+              <!-- <div class="taskdetails">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, atque sapiente suscipit veli
+                </p>
+              </div> -->
+               </div>
+            </div>
+         </section>
+
+         <section class="weekly-page main-pages" >
+            <div class="page-area">
+            <button class="back" id="1">CLOSE</button>
+            <h1>weekly plan </h1>
+        </div>
+         </section>
+
+         <section class="monthly-page main-pages" >
+            <div class="page-area">
+            <button class="back" id="2">CLOSE</button>
+            <h1>monthly plan</h1>
+        </div>
+         </section>
+
+         <section class="motivation-page main-pages" >
+            <div class="page-area">
+            <button class="back" id="3" >CLOSE</button>
+            <h1>motivation </h1>
+        </div>
+         </section>
+
+         
     </main>
 
-    <!-- To do section -->
-    <section  class="elempage open">
 
-        <h1>Todo</h1>
-    </section>
-
-    <!-- daily planner -->
-     <section class="elempage open">
-        <h1>Daily Planner</h1>
-     </section>
-     <!-- motivation -->
-      <section class="elempage open">
-        <h1>Motivation</h1>
-      </section>
-      <!-- daily goal -->
-       <section class="elempage open">
-        <h1>daily goal</h1>
-       </section>
-       <!-- timer -->
-        <section class="elempage open">
-            <h1>timer</h1>
-        </section>
-
-
-
-    <script src="./app.js"></script>
 </body>
 </html>
