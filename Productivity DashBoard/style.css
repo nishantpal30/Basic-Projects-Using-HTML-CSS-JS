@@ -217,16 +217,51 @@ textarea::placeholder {
         color: var(--textclr);
         text-transform: capitalize;
     }
+    & details{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        & p{
+           
+            color: var(--btnhead);
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        & summary {
+  list-style: none;
+  cursor: pointer;
 }
 
-.main-pages .todo-area .deletetask .taskdetails{
-    background-color: var(--background);
-    padding: 2rem;
-    border-radius: 1rem;
-    color: var(--textclr);
-    text-transform: capitalize;
-    & p{
-        font-size: 2rem;
-        font-weight: bold;
+summary::-webkit-details-marker {
+  display: none;
+}
     }
 }
+
+summary {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* Arrow */
+summary::before {
+  content: "▶";
+  margin-right: 10px;
+  transition: 0.5s;
+  color: var(--box);
+}
+
+/* Rotate when open */
+details[open] summary::before {
+  content: "▼";
+}
+
+.main-pages .todo-area .deletetask .tasklists details p {
+  transition: all 0.5s ease;
+}
+
+
+   
+    
