@@ -6,7 +6,7 @@ let todoform = document.querySelector(".todo-form");
 let todoinput = document.querySelector(".todo-area .addtask form input");
 let todotext = document.querySelector(".todo-area .addtask form textarea");
 let dlttask = document.querySelector(".todo-area .deletetask");
-// let btntask = document.querySelector(".todo-area .deletetask .tasklists button");
+
 
 allcards.forEach(function (elem) {
   elem.addEventListener("click", function () {
@@ -43,7 +43,7 @@ todoform.addEventListener("submit", (e) => {
 
 function rendertask() {
   dlttask.innerHTML = "";
-  currenttask.forEach(function (task) {
+  currenttask.forEach(function (task , index) {
     const div = document.createElement("div");
     div.classList.add("tasklists");
     div.innerHTML = `
@@ -53,7 +53,7 @@ function rendertask() {
     </summary>
     <p>${task.detail}</p></details>
    
-    <button>Mark's as Complete</button>
+    <button data-index="${index}">Mark's as Complete</button>
     `
    
     ;
@@ -66,7 +66,15 @@ document.addEventListener("click", (e) => {
   const btn = e.target.closest(".todo-area .deletetask .tasklists button");
 
   if (btn) {
-    console.log(task.task);
+ let clickedIndex = Number(btn.dataset.index);
+  currenttask.splice(clickedIndex, 1);
+
+    // update localStorage
+    localStorage.setItem("currenttask", JSON.stringify(currenttask));
+
+    // re-render UI
+    rendertask();
 }
 }
 );
+
