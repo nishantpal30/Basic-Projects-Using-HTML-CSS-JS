@@ -1,102 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Productivity Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-img">
-                <img src="./Images/nav nature.jpg" alt="nature">
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-img">
+          <img src="./Images/nav nature.jpg" alt="nature" />
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="main-card">
-            <!-- todo div -->
-            <div class="main-todo main-ele" id="0">
-                <img src="./Images/4.jpg" alt="todo">
-                <h2>To-Do</h2>
-            </div>
-            <!-- weekly div -->
-             <div class="main-week main-ele" id="1">
-                <img src="./Images/weekly.jpg" alt="weekly">
-                <h2>weekly</h2>
-            </div>
-            <!-- monthly div -->
-             <div class="main-month main-ele" id="2">
-                <img src="./Images/month.png" alt="month">
-                <h2>Monthly</h2>
-            </div>
-            <!-- Motivation  -->
-              <div class="main-motivation main-ele" id="3">
-                <img src="./Images/motivation.jpg" alt="motivation">
-                <h2>Motivation</h2>
-            </div>
+      <div class="main-card">
+        <!-- todo div -->
+        <div class="main-todo main-ele" id="0">
+          <img src="./Images/4.jpg" alt="todo" />
+          <h2>To-Do</h2>
         </div>
+        <!-- weekly div -->
+        <div class="main-week main-ele" id="1">
+          <img src="./Images/weekly.jpg" alt="weekly" />
+          <h2>weekly</h2>
+        </div>
+        <!-- monthly div -->
+        <div class="main-month main-ele" id="2">
+          <img src="./Images/month.png" alt="month" />
+          <h2>Monthly</h2>
+        </div>
+        <!-- Motivation  -->
+        <!-- <div class="main-motivation main-ele" id="3">
+          <img src="./Images/motivation.jpg" alt="motivation" />
+          <h2>Motivation</h2>
+        </div> -->
+      </div>
 
-        <!-- thought div -->
-         <div class="thought">
-            <h1>Consistency is all key</h1>
-         </div>
+      <!-- thought div -->
+      <div class="thought">
+        <h1></h1>
+      </div>
 
-         <!-- todo page -->
-         <section class="main-pages todo-pge" >
-            <button class="back" id="0">CLOSE</button>
-            <h1>your personalised tasklist</h1>
+      <!-- todo page -->
+      <section class="main-pages todo-pge">
+        <button class="back" id="0">CLOSE</button>
+        <h1>your personalised tasklist</h1>
 
-             <!-- to area -->
-            <div class="todo-area">
-               <div class="addtask">
-                <form action="" class="todo-form">
-            <input type="text" placeholder="Enter Task!">
-            <textarea name="" placeholder="Enter Details..." id="" cols="7" rows="3"></textarea>
-            
-            <button>Add Task</button>
+        <!-- to area -->
+        <div class="todo-area">
+          <div class="addtask">
+            <form action="" class="todo-form">
+              <input type="text" placeholder="Enter Task!" />
+              <textarea
+                name=""
+                placeholder="Enter Details..."
+                id=""
+                cols="7"
+                rows="3"
+              ></textarea>
 
-        </form>
-
-               </div>
-               <div class="deletetask">
-                <!-- <div class="tasklists">
+              <button>Add Task</button>
+            </form>
+          </div>
+          <div class="deletetask">
+            <!-- <div class="tasklists">
                     <h5>Get up early</h5>
                     <button>Mark's as completed</button>
                 </div> -->
-               
-          
-               </div>
+          </div>
+        </div>
+      </section>
+
+      <!--! weekly page -->
+      <section class="weekly-page main-pages">
+        <div class="page-area">
+          <button class="back" id="1">CLOSE</button>
+          <h1>weekly plan</h1>
+        </div>
+        <div class="weekly-table">
+          <!-- <div class="week-days">
+                <div class="week-name">
+                    <h2>Monday</h2>
+                </div>
+                <div class="week-text">
+                <textarea name="" id="" placeholder="Enter weekly goal...." rows="2" cols="19"></textarea>
             </div>
-         </section>
-
-         <!--! weekly page -->
-         <section class="weekly-page main-pages" >
-            <div class="page-area">
-            <button class="back" id="1">CLOSE</button>
-            <h1>weekly plan </h1>
+            </div> -->
         </div>
-         </section>
-
-         <section class="monthly-page main-pages" >
-            <div class="page-area">
-            <button class="back" id="2">CLOSE</button>
-            <h1>monthly plan</h1>
+      </section>
+      <!--?monthly-page -->
+      <section class="monthly-page main-pages">
+        <div class="page-area">
+          <button class="back" id="2">CLOSE</button>
+          <h1>monthly plan</h1>
         </div>
-         </section>
 
-         <section class="motivation-page main-pages" >
-            <div class="page-area">
-            <button class="back" id="3" >CLOSE</button>
-            <h1>motivation </h1>
+
+      </section>
+
+      <!-- <section class="motivation-page main-pages">
+        <div class="page-area">
+          <button class="back" id="3">CLOSE</button>
+          <h1>motivation</h1>
         </div>
-         </section>
-
-         
+      </section> -->
     </main>
 
-<script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
